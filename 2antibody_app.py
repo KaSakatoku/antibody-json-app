@@ -12,7 +12,7 @@ g = Github(st.secrets["GITHUB_TOKEN"])
 repo = g.get_repo(REPO_NAME)
 
 try:
-    file = repo.get_contents(FILE_PATH)
+    file = repo.get_contents(FILE_PATH, ref="heads/main")
     rack = json.loads(file.decoded_content)
 except:
     rack = {}
@@ -55,7 +55,7 @@ if "selected" in st.session_state:
         rack[pos] = ab
 
         try:
-            file = repo.get_contents(FILE_PATH)
+            file = repo.get_contents(FILE_PATH, ref="heads/main")  # 🔁 最新SHA取得
             repo.update_file(
                 path=FILE_PATH,
                 message=f"update {pos}",
