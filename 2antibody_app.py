@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-from github import Github
+from github import Github, GithubException
 import pandas as pd
 
 # GitHubリポジトリ名（あなたのリポジトリに書き換える）
@@ -14,8 +14,12 @@ repo = g.get_repo(REPO_NAME)
 try:
     file = repo.get_contents(FILE_PATH, ref="heads/main")
     rack = json.loads(file.decoded_content)
-except:
-    rack = {}
+except GithubException as e:
+    if e.status == 404:
+        rack = {}
+    else:
+        st.error(f"初期読み込みエラー：{e}")
+        raise e
 
 # ラックの定義
 ROWS, COLS = 8, 12
@@ -55,21 +59,24 @@ if "selected" in st.session_state:
         rack[pos] = ab
 
         try:
-            file = repo.get_contents(FILE_PATH, ref="heads/main")  # 🔁 最新SHA取得
+            file = repo.get_contents(FILE_PATH, ref="heads/main")
             repo.update_file(
                 path=FILE_PATH,
                 message=f"update {pos}",
                 content=json.dumps(rack, indent=2),
                 sha=file.sha
             )
-        except Exception as e:
-            if "404" in str(e):
+        except GithubException as e:
+            if e.status == 409:
+                st.error("GitHub上のファイルが別のセッションで更新されました。ページを更新してください。")
+            elif e.status == 404:
                 repo.create_file(
                     path=FILE_PATH,
                     message=f"create {pos}",
                     content=json.dumps(rack, indent=2)
                 )
             else:
+                st.error(f"保存に失敗しました（{e.status}）：{e.data.get('message', '詳細不明')}。")
                 raise e
 
         st.success("保存しました。ページを更新して反映を確認してください。")
