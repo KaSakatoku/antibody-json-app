@@ -4,14 +4,18 @@ from github import Github
 import pandas as pd
 
 # GitHubリポジトリ名（あなたのリポジトリに書き換える）
-REPO_NAME = "KaSakatoku/antibody-json-app"  # ← ここだけ変更点
+REPO_NAME = "KaSakatoku/antibody-json-app"
 FILE_PATH = "rack.json"
 
 # GitHubトークンで認証
 g = Github(st.secrets["GITHUB_TOKEN"])
 repo = g.get_repo(REPO_NAME)
-file = repo.get_contents(FILE_PATH)
-rack = json.loads(file.decoded_content)
+
+try:
+    file = repo.get_contents(FILE_PATH)
+    rack = json.loads(file.decoded_content)
+except:
+    rack = {}
 
 # ラックの定義
 ROWS, COLS = 8, 12
@@ -58,7 +62,7 @@ if "selected" in st.session_state:
                 content=json.dumps(rack, indent=2),
                 sha=file.sha
             )
-        except Exception as e:
+        except:
             repo.create_file(
                 path=FILE_PATH,
                 message=f"create {pos}",
