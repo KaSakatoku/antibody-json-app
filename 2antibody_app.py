@@ -33,7 +33,7 @@ for i in range(ROWS):
         pos = f"{chr(65+i)}{j+1}"
         ab = rack[pos]
         label = ab["name"] if ab["name"] else pos
-        highlight = search.lower() in f"{ab['name']} {ab['clone']} {ab['fluor']}").lower()
+        highlight = search.lower() in f"{ab['name']} {ab['clone']} {ab['fluor']}".lower()
         if cols[j].button(label, key=pos, use_container_width=True):
             st.session_state.selected = pos
         if highlight:
