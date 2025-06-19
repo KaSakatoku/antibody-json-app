@@ -50,13 +50,19 @@ if "selected" in st.session_state:
     if st.button("保存"):
         rack[pos] = ab
 
-        # 🔁 最新のshaを取得し直す
-        file = repo.get_contents(FILE_PATH)
+        try:
+            file = repo.get_contents(FILE_PATH)
+            repo.update_file(
+                path=FILE_PATH,
+                message=f"update {pos}",
+                content=json.dumps(rack, indent=2),
+                sha=file.sha
+            )
+        except Exception as e:
+            repo.create_file(
+                path=FILE_PATH,
+                message=f"create {pos}",
+                content=json.dumps(rack, indent=2)
+            )
 
-        repo.update_file(
-            path=FILE_PATH,
-            message=f"update {pos}",
-            content=json.dumps(rack, indent=2),
-            sha=file.sha
-        )
         st.success("保存しました。ページを更新して反映を確認してください。")
