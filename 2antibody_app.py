@@ -62,11 +62,14 @@ if "selected" in st.session_state:
                 content=json.dumps(rack, indent=2),
                 sha=file.sha
             )
-        except:
-            repo.create_file(
-                path=FILE_PATH,
-                message=f"create {pos}",
-                content=json.dumps(rack, indent=2)
-            )
+        except Exception as e:
+            if "404" in str(e):
+                repo.create_file(
+                    path=FILE_PATH,
+                    message=f"create {pos}",
+                    content=json.dumps(rack, indent=2)
+                )
+            else:
+                raise e
 
         st.success("保存しました。ページを更新して反映を確認してください。")
