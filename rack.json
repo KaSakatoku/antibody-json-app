@@ -1,1 +1,482 @@
-{}
+{
+  "A1": {
+    "name": "a",
+    "clone": "a",
+    "fluor": "a"
+  },
+  "A2": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A3": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A4": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A5": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A6": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A7": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A8": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A9": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A10": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A11": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "A12": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B1": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B2": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B3": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B4": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B5": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B6": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B7": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B8": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B9": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B10": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B11": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "B12": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C1": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C2": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C3": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C4": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C5": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C6": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C7": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C8": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C9": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C10": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C11": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "C12": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D1": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D2": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D3": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D4": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D5": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D6": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D7": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D8": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D9": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D10": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D11": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "D12": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E1": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E2": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E3": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E4": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E5": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E6": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E7": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E8": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E9": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E10": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E11": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "E12": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F1": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F2": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F3": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F4": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F5": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F6": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F7": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F8": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F9": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F10": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F11": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "F12": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G1": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G2": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G3": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G4": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G5": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G6": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G7": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G8": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G9": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G10": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G11": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "G12": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H1": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H2": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H3": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H4": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H5": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H6": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H7": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H8": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H9": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H10": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H11": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  },
+  "H12": {
+    "name": "",
+    "clone": "",
+    "fluor": ""
+  }
+}
