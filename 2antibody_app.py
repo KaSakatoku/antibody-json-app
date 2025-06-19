@@ -33,7 +33,7 @@ for i in range(ROWS):
         pos = f"{chr(65+i)}{j+1}"
         ab = rack[pos]
         label = ab["name"] if ab["name"] else pos
-        highlight = search.lower() in f"{ab['name']} {ab['clone']} {ab['fluor']}".lower()
+        highlight = search.lower() in f"{ab['name']} {ab['clone']} {ab['fluor']}").lower()
         if cols[j].button(label, key=pos, use_container_width=True):
             st.session_state.selected = pos
         if highlight:
@@ -49,6 +49,10 @@ if "selected" in st.session_state:
     ab["fluor"] = st.text_input("蛍光色素", ab["fluor"])
     if st.button("保存"):
         rack[pos] = ab
+
+        # 🔁 最新のshaを取得し直す
+        file = repo.get_contents(FILE_PATH)
+
         repo.update_file(
             path=FILE_PATH,
             message=f"update {pos}",
