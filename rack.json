@@ -10,9 +10,9 @@
     "fluor": ""
   },
   "A3": {
-    "name": "",
-    "clone": "",
-    "fluor": ""
+    "name": "Alexa 488",
+    "clone": "abcd",
+    "fluor": "a"
   },
   "A4": {
     "name": "",
